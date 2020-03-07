@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>stepper form</title>
+</head>
+<body>
+    
+    <div class="container-form">
+        <form action="#">
+            <div class="steps">
+                <div class="step step-1">1</div>
+                <hr id="line1-2">
+                <div class="step step-2">2</div>
+                <hr id="line2-3">
+                <div class="step step-3">3</div>
+            </div>
+            <div class="form-group">
+                <div class="group group-1">
+                    <label for="username">User Name:</label>
+                    <input type="text" placeholder="User Name" id="username">
+                    <a href="#" data-next="page2" class="btn">Next</a>
+                </div>
+    
+                <div class="group group-2">
+                    <label for="email">email:</label>
+                    <input type="email" placeholder="email" id="email">
+                    <a href="#" class="btn" data-back="page1">Back</a>
+                    <a href="#" class="btn" data-next="page3">Next</a>
+                </div>
+    
+                <div class="group group-3">
+                    <a href="#" class="btn btn-submit" data-submit="submit">Submit</a>
+                    <a href="#" class="btn" data-back="page2">Back</a>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
